@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Loading" customModule="Moim" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view alpha="0.0" contentMode="scaleToFill" id="iN0-l3-epB" customClass="Loading" customModule="Moim" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jao-Kj-OxJ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" name="gray_background"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4K-Am-NPJ" customClass="AnimationView" customModule="Lottie">
+                    <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="wW9-7y-54S"/>
+                        <constraint firstAttribute="width" constant="100" id="x2Z-1o-sd6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Jao-Kj-OxJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="26p-Ew-NTZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Jao-Kj-OxJ" secondAttribute="trailing" id="9Lu-Rz-Ulb"/>
+                <constraint firstItem="A4K-Am-NPJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Rwo-wB-Sxb"/>
+                <constraint firstItem="A4K-Am-NPJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eXs-CL-X6i"/>
+                <constraint firstAttribute="bottom" secondItem="Jao-Kj-OxJ" secondAttribute="bottom" id="euG-Pc-FoC"/>
+                <constraint firstItem="Jao-Kj-OxJ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="n91-Gz-tZV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="loadingAnimationView" destination="A4K-Am-NPJ" id="bVP-3O-mDS"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="gray_background">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
